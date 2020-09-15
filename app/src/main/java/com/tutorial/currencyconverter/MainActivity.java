@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         Double parseAmountToDouble = Double.parseDouble(amountEdt.getText().toString());
         Double convertToRupiah = parseAmountToDouble * 14952;
 
-        Locale locale = new Locale("idn", "id");
-        NumberFormat numberFormat = NumberFormat.getNumberInstance(locale);
+        Locale localeID = new Locale("in", "ID");
+        NumberFormat numberFormat = NumberFormat.getNumberInstance(localeID);
 
         Toast.makeText(this, "Rp " +  numberFormat.format(convertToRupiah), Toast.LENGTH_LONG).show();
 
